@@ -1,0 +1,20 @@
+name = "roadcoin-worker"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "roundtrip"
+database_id = "ec4efdfb-a76e-46fb-a821-1278e17e7b90"
+
+[vars]
+APP_NAME = "RoadCoin"
+ROADCHAIN_URL = "https://roadchain-worker.blackroad.workers.dev"
+SYMBOL = "ROAD"
+TOTAL_SUPPLY = "1000000000"
+BASE_CHAIN_ID = "8453"
+
+# Secrets:
+# wrangler secret put COINBASE_API_KEY
+# wrangler secret put COINBASE_PROJECT_ID
